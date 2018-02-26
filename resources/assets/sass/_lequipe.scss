@@ -1,0 +1,97 @@
+.bg-team {
+	background-position: center;
+	background-size: cover;
+	background-image: url('../img/div/team.jpg');
+}
+
+
+/*	===============	Nav equipe	===============	*/
+
+	#nav-equipe {
+		position: fixed;
+		padding-left: 0;
+	}
+
+	.eq-ul > li {
+		width: 100%;
+		& > a {
+			padding: .6em 1em .4em 1em;
+			border-left: 5px solid transparent;
+			&.active {
+				color: $color-darkblue !important;	
+				font-weight: bold;
+				border-left: 5px solid $color-darkblue;
+			}
+			@media (max-height: 700px) {
+				padding: .4em 1em .2em 1em !important;
+			}
+		}
+	}
+	.eq-nav {
+		border-bottom: 1px solid $color-cleargrey;
+	}
+	.eq-ssNav {
+		padding-left: 2em !important;
+		font-size: 14px;
+	}
+
+
+
+/*	===============	Div equipe	===============	*/
+	
+	#div-equipe {
+		position: relative;
+		overflow: auto;
+	}
+
+	.eq-portrait {
+		height: 100%;
+		border-radius: 50%;
+	}
+	.eq-card {
+		height: 120px;
+	}
+
+	.eq-categ {
+		padding-top: 1em;
+		padding-bottom: 2em !important;
+		@media (min-width: $breakpoint-md) {
+			padding-left: 4%;
+		}
+	}
+	.eq-ssCateg {
+		padding-bottom: 3rem;
+	}
+	h3.eq-title {
+		font-size: 2rem;
+	}
+	h2.eq-title{
+		margin-bottom: 1rem;
+		font-size: 2.25rem;
+		&::after {
+			content: '';
+			height: 1px;
+			width: 92%;
+			display: block;
+			bottom: -0.35em;
+			position: absolute;
+			left: 4%;
+			background-color: $color-cleargrey;
+		}
+	}
+	.eq-text {
+		& > h4 {
+			margin-bottom: 0;
+		}
+		& > h3 {
+			margin-bottom: 5px;
+		}
+	}
+
+	@media (max-width: $breakpoint-md) {
+		.eq-text > h3,
+		.eq-text > h4 {
+			line-height: .9;
+
+		}
+	}

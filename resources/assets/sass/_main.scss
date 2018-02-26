@@ -1,0 +1,97 @@
+/*	===============	Structures	===============	*/
+	main {
+		padding-top: $size-header;
+		// padding-bottom: $size-footer;
+		min-height: 100vh;
+	}
+	.slide {
+		width: 100%;
+		padding: 20px 10px;
+		// min-height: 100%;
+		// min-height: calc(100vh - #{$size-header} - #{$size-footer});
+		min-height: calc(100vh - #{$size-header});
+		margin: 0;
+	}
+	.fill {
+		width: 	100%;
+		min-height: 100vh;
+		// min-height: calc(100vh - #{$size-header} - #{$size-footer});
+		min-height: calc(100vh - #{$size-header});
+	}
+	
+	#header {
+		min-height: $size-header;
+	}
+	
+	.footer {
+		background-color: #fff;
+		position: absolute;
+		width: 100%;
+		padding: 10px;
+	}
+
+/*	===============	Backgrounds	===============	*/
+
+	.bg-white {
+		background-color: $color-light !important;
+	}
+	.bg-transparent {
+		background-color: $color-clear !important;
+	}
+	.bg-aquarelle {
+		background-image: url('../img/bg-aquarelle.jpg');
+		background-position: center;
+		background-size: cover;
+	}
+	.bg-parchemin {
+		background-image: url('../img/bg-parchemin.jpg');
+		background-position: top center;
+		background-repeat: repeat-y;
+		background-size: contain;
+	}
+	.bg-parcheminLong {
+		background-image: url('../img/bg-parcheminLong.png');
+		background-position: center;
+	}
+	.box {
+		margin: 10px !important;
+		padding: 20px 30px !important;
+		background-color: $color-clear;
+		border-radius: 3px;
+	}
+
+
+/*	===============	Typography	===============	*/
+
+	html, body {
+		font-family: 'Sorts Mill Goudy', Times, serif;
+		font-size: 18px;
+	}
+	.wine-link,
+	h1, h2, .eq-title {
+		font-family: 'Lancelot', Georgia, serif;
+	}
+	.title {
+		font-family: 'Pirata One', Times, serif;
+	}
+	.skull {
+		padding-left: 1.2em; 
+		&:before {
+			content: '';
+			position: absolute;
+			top: .1em;
+			left: .5em;
+			height: .8em; width: .8em;
+			background-image: url('../img/tete.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+
+	.list-styled {
+		margin : 0;
+		padding-left: 2.2em;
+	}
+	strong {
+		font-weight: normal;
+	}

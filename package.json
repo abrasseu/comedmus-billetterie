@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "name": "comedmus",
+  "version": "1.0.0",
+  "description": "Site de la Comédie Musicale de 2017",
+  "author": "Alexandre Brasseur",
+  "license": "CC-BY-NC-SA-4.0",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
+    "gulp-cssbeautify": "latest",
+    "gulp-csscomb": "latest",
+    "gulp-csso": "latest",
+    "gulp-html-extend": "latest",
+    "gulp-iconfont": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-plumber": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    }
+}

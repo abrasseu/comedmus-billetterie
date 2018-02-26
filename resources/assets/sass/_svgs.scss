@@ -1,0 +1,132 @@
+/*	===============	Home Logo	===============	*/
+
+	#svg-home-div {
+		position: relative;
+		max-height: 60vh;
+	}
+	#svg-home-logo {
+		display: block;
+		margin: 0 auto;
+		width: 80%;
+		max-width: 600px;
+		z-index: 10;
+	}
+
+	#svg-home-bateau {
+		z-index: 0;
+	}
+
+	#svg-home-logo,
+	#svg-home-bateau {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		max-height: 80%;
+		max-width: 90%;
+	}
+
+
+	#La_Com {
+		// fill:
+	}
+
+	@keyframes introTexte {
+		from { transform: translateY(100%); }
+		to { transform: translateY(-10%); }
+	}
+
+/*	===============	Boussole Synopsis	===============	*/
+
+	#svg-boussole {
+		position: fixed;
+		width: 100%; 	height: 100%;
+		top: 0;			left: 0;
+		overflow: hidden;
+		opacity: .7;
+	}
+
+	// Boussole
+	#boussole {
+		transform-origin: 905px 1245px;
+		-webkit-animation: boussole 5s cubic-bezier(.65,0,.35,1) infinite alternate;
+		   -moz-animation: boussole 5s cubic-bezier(.65,0,.35,1) infinite alternate;
+			-ms-animation: boussole 5s cubic-bezier(.65,0,.35,1) infinite alternate;
+			 -o-animation: boussole 5s cubic-bezier(.65,0,.35,1) infinite alternate;
+				animation: boussole 5s cubic-bezier(.65,0,.35,1) infinite alternate;
+	}
+	/*
+	<animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 905 1245" to="10 905 1245" dur="5s" repeatCount="indefinite"/>
+	 */
+	@keyframes boussole {
+		from { transform: rotate(0deg); }
+		to { transform: rotate(10deg); }
+	}
+	@-webkit-keyframes boussole {
+		from { transform: rotate(0deg); }
+		to { transform: rotate(10deg); }
+	}
+
+	// Vagues
+	#vague1 { animation-delay: .1s }
+	#vague2 { animation-delay: .2s }
+	#vague3 { animation-delay: .3s }
+	#vague4 { animation-delay: .4s }
+	#vague5 { animation-delay: .5s }
+	#vague6 { animation-delay: .6s }
+	.vague {
+		-webkit-animation: vague 2s cubic-bezier(.1,.3,.4,1) infinite alternate;
+		   -moz-animation: vague 2s cubic-bezier(.1,.3,.4,1) infinite alternate;
+			-ms-animation: vague 2s cubic-bezier(.1,.3,.4,1) infinite alternate;
+			 -o-animation: vague 2s cubic-bezier(.1,.3,.4,1) infinite alternate;
+				animation: vague 2s cubic-bezier(.1,.3,.4,1) infinite alternate;
+	}
+	@keyframes vague {
+		from { transform: translateX(0); }
+		to { transform: translateX(100px); }
+	}
+	@-webkit-keyframes vague {
+		from { transform: translateX(0); }
+		to { transform: translateX(100px); }
+	}
+
+
+/*	===============	Feuille Contact	===============	*/
+	#svg-feuille {
+		position: fixed;
+		width: 40%;	height: 100%;
+		top: 0;		right: 5%;
+		overflow: hidden;
+	}
+
+
+/*	===============	Gun Lequipe	===============	*/
+	#svg-gun {
+		position: absolute;
+		width: 80%;
+		top: 15%;	right: 20px;
+	}
+
+
+@media (max-width: $breakpoint-md) {
+	#svg-boussole {
+		width: 150%;
+		padding-top: 53.6px;
+		left: -40%;
+	}
+	#svg-feuille {
+		width: 90%;
+		top: 10%;	right: 5%;
+	}
+}
+@media (min-width: $breakpoint-md) {
+	#svg-boussole {
+		width: 110%;
+		padding-top: 56px;
+		left: -10%;
+	}
+	#svg-feuille {
+		width: 40%;
+		top: 0;
+	}
+}

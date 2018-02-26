@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Lancelot|Sorts+Mill+Goudy');
+
+// Colors
+$color-light : #fdfdfd;
+$color-clear : rgba(255,255,255,.85);
+$color-cleargrey: rgba(0,0,0,.1);
+$color-grey: #272727;
+$color-blue: #4896de; // #0275d8;
+$color-darkblue: darken($color-blue, 25%);
+
+// Sizes
+$size-header: 65px;
+$size-footer: 40px;
+
+// Breakpoints
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Partials
+@import 'main';
+// @import 'intro';
+@import 'lequipe';
+@import 'lassociation';
+@import 'svgs';
+
+

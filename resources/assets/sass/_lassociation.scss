@@ -1,0 +1,124 @@
+
+/*	===============	Menu Assoc	===============	*/
+
+	.wine-div {
+		display: table;
+		margin: 5px auto;
+		width:  80px;
+		height: 80px;
+		background-position: center;
+		background-repeat: no-repeat;
+		-webkit-transition: all .1s ease-in;
+		   -moz-transition: all .1s ease-in;
+		    -ms-transition: all .1s ease-in;
+		     -o-transition: all .1s ease-in;
+		        transition: all .1s ease-in;
+		&:hover {
+			-webkit-transform: scale(1.15);
+			   -moz-transform: scale(1.15);
+			    -ms-transform: scale(1.15);
+			     -o-transform: scale(1.15);
+			        transform: scale(1.15);
+		}
+
+
+		@media (min-width: $breakpoint-sm) {
+			width: 60px;
+			height: 60px;
+		}
+		@media (max-width: $breakpoint-lg) {
+			width: 80px;
+			height: 80px;
+		}
+		@media (min-width: $breakpoint-lg) {
+			width: 100px;
+			height: 100px;
+		}
+		@media (min-width: $breakpoint-lg + 100) {
+			width: 120px;
+			height: 120px;
+		}
+	}
+
+	.wine-link {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		margin: 0 auto;
+		width: 100%;
+		font-weight: 800;
+		font-size: 1.3em;
+		line-height: 1.1;
+		color: #000 !important;
+		text-decoration: none !important;
+	}
+
+	.wine-1 { background-image: url('../img/taches/tache1.svg'); }
+	.wine-2 { background-image: url('../img/taches/tache2.svg'); }
+	.wine-3 { background-image: url('../img/taches/tache3.svg'); }
+	.wine-4 { background-image: url('../img/taches/tache4.svg'); }
+	.wine-5 { background-image: url('../img/taches/tache5.svg'); }
+	.wine-6 { background-image: url('../img/taches/tache6.svg'); }
+
+	.btn {
+		white-space:normal;
+		text-shadow: none;
+	}
+
+
+/*	===============	Content Assoc	===============	*/
+
+	#decouvrir,
+	#menu-decouvrir {
+		overflow: hidden;
+	}
+
+	/* Content */
+	.decouvrir-content {
+		display: none !important;
+		color: #fff;
+		text-shadow: 1px 1px 3px #555;
+		background-position: center;
+		background-size: cover;
+		-webkit-transition: all .25s ease-in-out;
+		   -moz-transition: all .25s ease-in-out;
+		    -ms-transition: all .25s ease-in-out;
+		     -o-transition: all .25s ease-in-out;
+		        transition: all .25s ease-in-out;
+		&.active {
+			display: table-cell !important;
+		}
+	}
+	.decouvrir-text {
+		max-width: 650px;
+	    background-color: rgba(0,0,0,.7);
+	    padding: 20px 30px;
+	}
+
+
+	#decouvrir-content-div {
+		#general {
+			background-image: url('../img/div/theatre-main.jpg');
+		}
+		#script {
+			background-image: url('../img/div/writing2.jpeg');
+		}
+		#theatre {
+			background-image: url('../img/div/theatre.jpg');
+		}
+		#decors-costumes {
+			background-image: url('../img/div/sword2.jpg');
+			background-position: center 70%;
+		}
+		#musique {
+			background-image: url('../img/div/orchestre.jpg');
+		}
+		#chant {
+			background-image: url('../img/div/chant.jpg');
+			background-position: left 25%;
+		}
+		#danse {
+			background-image: url('../img/div/danse-bw.jpg');
+		}
+	}
+	
